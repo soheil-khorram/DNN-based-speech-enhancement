@@ -1,16 +1,22 @@
 #!/bin/bash
 
+# Author: Soheil Khorram
+# License: Simplified BSD
+
+# A bash file designed to sweep over different configurations of the network
+# Usage: ./run.sh dataset_path result_path
+#             It reads train, development and test samples from the dataset_path and
+#             stores the results (trained models and final metrics) in the result_path
+
 export CUDA_VISIBLE_DEVICE=0
 export MODEL='conv'
-data_dir=/home/crss/Desktop/Mamun/Features
-datasets=('SSN_0_dB' 'SSN_5_dB' 'SSN_10_dB')
-res_dir=/home/crss/Desktop/Mamun/res
+dataset=$1
+res_dir=$2
 layer_nums=(7)
 kernel_sizes=(7)
 kernel_nums=(64)
 bridges=('nothing' 'add' 'mul')
 paddings=('same' 'causal')
-for dataset in "${datasets[@]}"; do
 for layer_num in "${layer_nums[@]}"; do
     for kernel_size in "${kernel_sizes[@]}"; do
         for kernel_num in "${kernel_nums[@]}"; do
@@ -35,5 +41,4 @@ for layer_num in "${layer_nums[@]}"; do
             done
         done
     done
-done
 done
