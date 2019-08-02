@@ -1,9 +1,15 @@
+# Author: Soheil Khorram
+# License: Simplified BSD
+
 import os
 import datetime
 
 
 class Logger:
-
+    """
+    A simple static class designed for saving the outputs to a log file
+    """
+    
     @staticmethod
     def set_path(path):
         Logger.path = path
