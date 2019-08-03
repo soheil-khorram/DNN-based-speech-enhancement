@@ -3,7 +3,7 @@
 # Author: Soheil Khorram
 # License: Simplified BSD
 
-# A bash file designed to sweep over different configurations of the network
+# A bash file designed to train and test different configurations of the network
 # Usage: ./run.sh dataset_path result_path
 #             It reads train, development and test samples from the dataset_path and
 #             stores the results (trained models and final metrics) in the result_path
