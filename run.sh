@@ -10,8 +10,9 @@
 
 export CUDA_VISIBLE_DEVICE=0
 export MODEL='conv'
-dataset=$1
-res_dir=$2
+# This code supports two models: 'conv' and 'dilated'
+dataset_path=$1
+result_path=$2
 layer_nums=(7)
 kernel_sizes=(7)
 kernel_nums=(64)
@@ -25,9 +26,8 @@ for layer_num in "${layer_nums[@]}"; do
                     exp_name=${MODEL}_ln_${layer_num}_ks_${kernel_size}_kn_${kernel_num}_brg_${bridge}_pd_${padding}
                     command="\
                         python main.py \
-                            -data-dir $data_dir \
-                            -dataset $dataset \
-                            -res-dir $res_dir \
+                            -dataset-path $dataset_path \
+                            -result-path $result_path \
                             -layer-num $layer_num \
                             -kernel-size $kernel_size \
                             -kernel-num $kernel_num \
