@@ -27,6 +27,9 @@ To repeat the experiments of the paper [1], you can run the "run.sh" file with t
 
    ./run.sh dataset_directory output_directory
 
+Before running this line, make sure that your dataset files are in the dataset_directory folder and they are in right format. Samples should be stored in .mat format. The dataset_directory must contain the following files: "noisy1.mat", "clean1.mat",
+"noisy2.mat", "clean2.mat", ..., "noisyN.mat", "cleanN.mat", where N is the total number of samples; "noisyi.mat" and "cleani.mat" are the noisy and clean versions of the i-th sample. Each mat file stores a D-by-T matrix, where D is the dimensionality of the features and T is the total number of frames. In all experiments of the paper [1], all samples are zero padded to a fixed number of frames (T = ). 
+
 References
 ----------
 
@@ -38,3 +41,5 @@ Author
 ------
 
 - Soheil Khorram, 2019
+
+Please contact khorram.soheil@gmail.com, if you have any question regarding this repository.
