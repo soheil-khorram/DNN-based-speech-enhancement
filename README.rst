@@ -21,7 +21,11 @@ Vanilla CNN directly generates the enhanced signal from the input noisy signal; 
 How to run it?
 --------------
 
-Contains all codes related to the paper:
+To repeat the experiments of the paper [1], you can run the "run.sh" file with two arguments as:
+
+.. code-block:: bash
+
+   ./run.sh dataset_directory output_directory
 
 References
 ----------
