@@ -4,7 +4,7 @@
 
 ## What is it?
 
-This repository contains codes 
+This repository contains a python implementation of a deep neural network (DNN)-based speech enhancement system. It uses Keras with tensorflow back-end to train and test neural networks.  
 
 ## How to run it? 
 
