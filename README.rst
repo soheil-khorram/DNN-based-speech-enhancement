@@ -1,8 +1,12 @@
-# DNN-based-speech-enhancement
+.. -*- mode: rst -*-
 
-![logo](Fig2.png)
+DNN-based-speech-enhancement
+============================
 
-## What is it?
+.. image:: Fig2.png
+
+What is it?
+-----------
 
 This repository contains a python implementation of a deep neural network (DNN)-based speech enhancement system. It uses Keras with tensorflow back-end to train and test neural networks. The details of the implemented speech enhancement system are explained in the paper [1]. The system supports for the following features:
 
@@ -12,7 +16,8 @@ This repository contains a python implementation of a deep neural network (DNN)-
 
    (3) Thre different styles of enhancement: vanila, spectral subtraction and Wiener
 
-## How to run it? 
+How to run it?
+--------------
 
 Contains all codes related to the paper:
 
