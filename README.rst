@@ -14,14 +14,23 @@ This repository contains a python implementation of a deep neural network (DNN)-
 
    (2) Causal and non-causal convolutional networks.
 
-   (3) Three different styles of enhancement: vanilla, spectral-subtraction and Wiener. Vanilla CNN directly generates the enhanced signal from the input noisy signal; spectral-subtraction-style CNN first predicts noise and then generates the enhanced signal by subtracting noise from the noisy signal; Wiener-style CNN generates an optimal mask for suppressing noise. 
+   (3) Three different styles of enhancement: vanilla, spectral-subtraction and Wiener.
+   
+Vanilla CNN directly generates the enhanced signal from the input noisy signal; spectral-subtraction-style CNN first predicts noise and then generates the enhanced signal by subtracting noise from the noisy signal; Wiener-style CNN generates an optimal mask for suppressing noise. 
 
 How to run it?
 --------------
 
 Contains all codes related to the paper:
 
+References
+----------
 
-[1] Nursadul M., Khorram S., Hansen J., "Convolutional Neural Network-based Speech Enhancement for Cochlear Implant Recipients", Interspeech, 2019.
+.. [1] Nursadul M., Khorram S., Hansen J.,
+       *"Convolutional Neural Network-based Speech Enhancement for Cochlear Implant Recipients"*,
+       Interspeech, 2019.
 
+Author
+------
 
+- Soheil Khorram, 2019
