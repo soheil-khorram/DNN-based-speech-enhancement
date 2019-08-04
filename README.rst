@@ -35,7 +35,7 @@ References
 
 .. [1] Nursadul M., Khorram S., Hansen J.,
        *"Convolutional Neural Network-based Speech Enhancement for Cochlear Implant Recipients"*,
-       Interspeech, 2019.
+       Interspeech, 2019. [`PDF <https://arxiv.org/pdf/1907.02526.pdf>`_]
 
 Author
 ------
